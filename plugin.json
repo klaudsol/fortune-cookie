@@ -1,0 +1,6 @@
+{
+  "name": "Fortune Cookie",
+  "menus":[
+    {"title": "Fortune Cookie", "link": "/plugins/fortune-cookie", "icon": "BiCookie"}
+  ]
+}
