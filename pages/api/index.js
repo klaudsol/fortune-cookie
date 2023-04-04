@@ -5,9 +5,6 @@
 //Changes on the imported libs do not require a restart.
 //This makes the development experience more pleasant and seamless.
 
-import FortuneCookie from '@/plugins/fortune-cookie/lib/FortuneCookie';
-export default function Index() {
+import { fortuneHandler } from '@/plugins/fortune-cookie/lib/FortuneAPI';
 
-  return <FortuneCookie />;
-
-}
+export default fortuneHandler;
