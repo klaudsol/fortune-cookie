@@ -6,8 +6,17 @@
 //This makes the development experience more pleasant and seamless.
 
 import FortuneCookie from '@/plugins/fortune-cookie/lib/FortuneCookie';
-export default function Index() {
+import { getSessionCache } from "@klaudsol/commons/lib/Session";
+import CacheContext from "@/components/contexts/CacheContext";
 
-  return <FortuneCookie />;
+export default function Index({cache}) {
+
+  return (
+    <CacheContext.Provider value={cache}>
+      <FortuneCookie />
+    </CacheContext.Provider>
+  );
 
 }
+
+export const getServerSideProps = getSessionCache();
