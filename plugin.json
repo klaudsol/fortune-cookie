@@ -1,6 +1,6 @@
 {
   "name": "Fortune Cookie",
   "menus":[
-    {"title": "Fortune Cookie", "link": "/plugins/fortune-cookie", "icon": "BiCookie"}
+    {"title": "Fortune Cookie", "link": "/plugins/fortune-cookie", "icon": "BiCookie", "capability": "read_contents"}
   ]
 }
