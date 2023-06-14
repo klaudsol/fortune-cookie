@@ -57,7 +57,7 @@ export default class StarRatingCustomAttributeType extends AttributeType {
 
     toApi() {
       const data = this.data;
-      return data;
+      return data == null ? null : parseInt(data);
     }
 
     readOnlyComponent(){
